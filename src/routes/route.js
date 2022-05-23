@@ -10,7 +10,7 @@ router.post("/register", userCreate)
 router.post("/login", userLogin)
 
 //----------Book's Api-------------------//
-router.post("/books", authentication,authorization, createBook)
+router.post("/books",/* authentication,authorization,*/ createBook)
 router.get("/books", authentication, getBookByQueryParams)
 router.get("/books/:bookId", authentication, getBookById)
 router.put("/books/:bookId", authentication,authorization, updateBookById)

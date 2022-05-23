@@ -19,7 +19,7 @@ const isValidObjectId = function (Id) {
 //#############################################################################################################
 //Function to validate the format and check the date is correct or not
 const isValidDate = function (s) {
-    // Assumes s is "YYYY/MM/DD"
+    // Assumes s is "YYYY-MM-DD"
     if ( ! /^(\d{4})\-(\d{1,2})\-(\d{1,2})$/.test(s) ) {
         return false;
     }
